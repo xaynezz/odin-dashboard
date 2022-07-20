@@ -14,6 +14,11 @@
         <title>Odin Dashboard</title>
     </head>
     <body>
+        <div class="menu-toggle">
+            <div class="hamburger">
+                <span></span>
+            </div>
+        </div>
         <div class="sidebar">
             <div class="logo">
                 <img src="images/logo.png" alt="" />
@@ -167,7 +172,7 @@
             <div class="namebar">
                 <div class="nb-left">
                     <img class="ayaka" src="images/ayaka.jpeg" alt="" />
-                    <h2>Hello, Andrew Oak (@xaynezz)</h2>
+                    <h3>Hello, Andrew Oak</h3>
                 </div>
                 <div class="nb-right">
                     <button>New</button>
@@ -604,5 +609,12 @@
                 </div>
             </div>
         </div>
+        <script>
+            const menuToggle = document.querySelector(".menu-toggle");
+            const sidebar = document.querySelector(".sidebar");
+            menuToggle.addEventListener("click", () => {
+                sidebar.classList.toggle("is-active");
+            });
+        </script>
     </body>
 </html>

@@ -309,8 +309,9 @@ body {
 
 .trending-element {
     display: flex;
+    justify-content: center;
     align-items: center;
-    width: 50%;
+    width: 100%;
     gap: 1rem;
 }
 
@@ -357,7 +358,7 @@ body {
     top: 8px;
 }
 
-@media (max-width: 1174px) {
+@media (max-width: 1175px) {
     .main {
         grid-template: 1fr 1fr 4fr / 1fr;
     }
